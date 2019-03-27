@@ -1,0 +1,17 @@
+#p-2 {color: #330088;}
+#p-1 {color: blue;}
+h1 {background-color:yellow;}
+
+#phone-book{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+thead{
+    border-bottom: 3px double black
+}
+
+#submit-btn{
+    width: 100%;
+    height: 100;
+}
