@@ -1,15 +1,3 @@
-/*function replacementColor(){
-                 var bg = document.getElementById("p-1");
-                 alert("BACKGROUND COLOR IS CHANGED from  " + bg.style.backgroundColor);
-                if ((bg.style.backgroundColor == "blue") || (bg.style.backgroundColor == "")){
-                    bg.style.backgroundColor = "green";
-                }
-                else{
-                    bg.style.backgroundColor = "blue";
-                }
-            }
-            */
-
 function OnReload() {
     $.ajax({
           url:"phonebook.php",
@@ -42,7 +30,6 @@ function OnSubmit() {
 
 function Del() {
     let phone = $("#phone-input").val();
-     alert("работаем")
     if (phone === "" ) 
         alert("Неверные данные!")
     else
@@ -66,17 +53,17 @@ $(function(){
   });
 
 
- // function rem(phone) {
-//    $.ajax({
-//              url:"delete.php",
-//              type:"POST",
-//              dataType: "text",
-//              data: "phone="+phone,
-//              success:function(result) {
-//                  OnReload();
-//                  alert('ok');
-//              }
-//            });
-//};
+  function rem(phone) {
+    $.ajax({
+              url:"delete.php",
+              type:"POST",
+              dataType: "text",
+              data: "phone="+phone,
+              success:function(result) {
+                  OnReload();
+                  //alert('ok');
+              }
+            });
+};
 
 
