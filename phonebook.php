@@ -10,6 +10,7 @@
                     <td>Name</td>
                     <td>Surname</td>
                     <td>Phone</td>
+                    <td>Remove</td>
                 </tr>
             </thead>
             <tbody>
@@ -21,7 +22,7 @@
                 echo "<td>" . $row["name"] ."</td>";
                 echo "<td>" . $row["surname"] ."</td>";
                 echo "<td>" . $row["phone"] ."</td>";
-               // echo "<td><button  onclick=\"rem('" . $row["phone"] . "')\"></button></td>";
+                echo "<td><button  onclick=\"rem('" . $row["phone"] . "')\"></button></td>";
                 echo "</tr>";
             }
     }
@@ -35,4 +36,4 @@
  ?>
         
 
-  <!--td>Remove</td-->
+ 
